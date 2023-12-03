@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav flex container">
+        <a href="#">
+          <img class="logo" src="assests/newsLogo.jpg" alt="newsAppLogo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex list ">
+            <li
+              class="hover-link nav-items"
+              id="sports"
+              onclick="onNavItemClick('sports')"
+            >
+              Sports
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="entertainment"
+              onclick="onNavItemClick('entertainment')"
+            >
+              Entertainment
+            </li>
+          </ul>
+        </div>
+        <div class="search flex">
+          <input class="news-input" type="text" placeholder="Eg: Science" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="card-container container flex"></div>
+    </main>
+    <template class="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img class="card-image" src="https://via.placeholder.com/400X200" />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the title</h3>
+          <h6 id="news-source">End Gadget 26/07/2022</h6>
+          <p id="news-desc" class="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            natus repudiandae sapiente porro ea enim eum velit accusantium saepe
+            nulla!
+          </p>
+        </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
